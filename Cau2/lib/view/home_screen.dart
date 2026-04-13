@@ -17,9 +17,9 @@ class _HomeScreenState extends State<HomeScreen> {
   void _validateName(String value) {
     final text = value.trim();
 
-    if (text.isEmpty) {
+    if(text.isEmpty){
       setState(() {
-        _errorText = 'Vui lòng nhập tên';
+        _errorText = 'Vui lòng nhập tên người dùng';
         _isValid = false;
       });
       return;
